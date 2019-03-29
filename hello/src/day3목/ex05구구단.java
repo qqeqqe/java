@@ -1,6 +1,6 @@
-package day3;
+package day3ëª©;
 
-public class ex05±¸±¸´Ü {
+public class ex05êµ¬êµ¬ë‹¨ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -9,10 +9,10 @@ public class ex05±¸±¸´Ü {
 		int res = 0;
 		int num = 2;
 		
-		for(num=1; num<=9; num++){//2ºÎÅÍ 9´Ü±îÁöÀÇ ÀÔ·Â
-			System.out.println(num + "´Ü");
+		for(num=1; num<=9; num++){//2ë¶€í„° 9ë‹¨ê¹Œì§€ì˜ ìž…ë ¥
+			System.out.println(num + "ë‹¨");
 			
-			for(i=1; i<=9; i++){ //2´Ü½ÃÀÛÈÄ 9±îÁö °ö¼¾ÇÑ´Ù
+			for(i=1; i<=9; i++){ //2ë‹¨ì‹œìž‘í›„ 9ê¹Œì§€ ê³±ì„¼í•œë‹¤
 		res = num * i;		
 		System.out.println(num + " X " + i + "=" + res);				
 		}

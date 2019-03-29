@@ -1,6 +1,6 @@
-package day3;
+package day3ëª©;
 
-public class ex09º°Æ®¸® {
+public class ex09ë³„íŠ¸ë¦¬ {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

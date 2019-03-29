@@ -1,6 +1,6 @@
-package day3;
+package day3목;
 
-public class ex02��ġ�ٲٱ� {
+public class ex02위치바꾸기 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
