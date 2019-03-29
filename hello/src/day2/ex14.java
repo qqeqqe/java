@@ -21,12 +21,12 @@ public class ex14 {
 			}
 		
 		if(cnt == 2){
-			System.out.println(num + " ´Â ¼Ò¼ö");
+			System.out.println(num + " ëŠ” ì†Œìˆ˜");
 		
 		}
 		
 		else{
-			System.out.println(num + "´Â ¼Ò¼ö°¡ ¾Æ´Õ´Ï´Ù");
+			System.out.println(num + "ëŠ” ì†Œìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤");
 		}
 		
 		

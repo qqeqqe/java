@@ -10,7 +10,7 @@ public class ex5 {
 		int a = 10;
 		double b = 0;
 		b = a % (double)3;
-		System.out.println("°ªÀº" + b);
+		System.out.println("ê°’ì€" + b);
 		
 	
 

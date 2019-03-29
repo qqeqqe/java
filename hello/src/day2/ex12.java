@@ -10,7 +10,7 @@ public class ex12 {
 		for (i = 1,sum=0 ; i <=4 ; i++){
 			sum = sum + i; 
 		}
-			System.out.println("1ºÎÅÍ 10±îÁöÀÇ ÇÕ:"+sum);
+			System.out.println("1ë¶€í„° 10ê¹Œì§€ì˜ í•©:"+sum);
 	}
 
 }

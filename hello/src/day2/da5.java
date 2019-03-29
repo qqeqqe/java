@@ -6,34 +6,34 @@ public class da5 {
 		// TODO Auto-generated method stub
 
 		/*
-		 ÄÜ¼ÖÃ¢¿¡ 2, 3, 5, 6ÀÇ ¼ýÀÚ¸¦ ÀÔ·ÂÇÒ¶§
+		 ì½˜ì†”ì°½ì— 2, 3, 5, 6ì˜ ìˆ«ìžë¥¼ ìž…ë ¥í• ë•Œ
 		 
 		 
-		 ÄÜ¼ÖÃ¢¿¡ 2¶ó°í ÇÒ¶§ 2ÀÇ ¹è¼öÀÔ´Ï´Ù ¶ó°í Ãâ·ÂÇÏ°í
-		 a°¡ 3ÀÇ ¹è¼öÀÌ¸é 3ÀÇ ¹è¼ö¶ó°í Ãâ·ÂÇÏ°í
-		 a°¡ 6ÀÇ ¹è¼ö¶ó¸é 6ÀÇ ¹è¼ö¶ó°í Ãâ·ÂÇÏ°í
-		 a°¡ 2,3,4ÀÇ ¹è¼ö°¡ ¾Æ´Ï¸é 2,3,6ÀÇ ¹è¼ö°¡ ¾Æ³³´Ï´Ù ¶ó°í Ãâ·ÂÇÏ¼¼¿ä
+		 ì½˜ì†”ì°½ì— 2ë¼ê³  í• ë•Œ 2ì˜ ë°°ìˆ˜ìž…ë‹ˆë‹¤ ë¼ê³  ì¶œë ¥í•˜ê³ 
+		 aê°€ 3ì˜ ë°°ìˆ˜ì´ë©´ 3ì˜ ë°°ìˆ˜ë¼ê³  ì¶œë ¥í•˜ê³ 
+		 aê°€ 6ì˜ ë°°ìˆ˜ë¼ë©´ 6ì˜ ë°°ìˆ˜ë¼ê³  ì¶œë ¥í•˜ê³ 
+		 aê°€ 2,3,4ì˜ ë°°ìˆ˜ê°€ ì•„ë‹ˆë©´ 2,3,6ì˜ ë°°ìˆ˜ê°€ ì•„ë‚©ë‹ˆë‹¤ ë¼ê³  ì¶œë ¥í•˜ì„¸ìš”
 		 
-		 a°¡ 6ÀÏ¶§ 6ÀÇ ¹è¼ö¶ó°í Ãâ·ÂÇØ¾ßÇÑ´Ù
+		 aê°€ 6ì¼ë•Œ 6ì˜ ë°°ìˆ˜ë¼ê³  ì¶œë ¥í•´ì•¼í•œë‹¤
 		 */
 		
 		int a = 12;
 		
 		if (a % 6 == 0){
-			System.out.println(a + "´Â 6ÀÇ ¹è¼öÀÔ´Ï´Ù.");
+			System.out.println(a + "ëŠ” 6ì˜ ë°°ìˆ˜ìž…ë‹ˆë‹¤.");
 			}
 		
 		
 		else if( a % 3 == 0){
-			System.out.println(a + "´Â 3ÀÇ ¹è¼öÀÔ´Ï´Ù.");
+			System.out.println(a + "ëŠ” 3ì˜ ë°°ìˆ˜ìž…ë‹ˆë‹¤.");
 		}	
 			
 		else if( a % 2 == 0){
-			System.out.println(a + "´Â 2ÀÇ ¹è¼öÀÔ´Ï´Ù.");
+			System.out.println(a + "ëŠ” 2ì˜ ë°°ìˆ˜ìž…ë‹ˆë‹¤.");
 			}
 			
 		else {
-			System.out.println(a + "´Â 2,3,4ÀÇ ¹è¼ö°¡ ¾Æ´Õ´Ï´Ù.");
+			System.out.println(a + "ëŠ” 2,3,4ì˜ ë°°ìˆ˜ê°€ ì•„ë‹™ë‹ˆë‹¤.");
 			}
 			
 

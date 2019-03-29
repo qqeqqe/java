@@ -15,25 +15,25 @@ public class ex10 {
 		
 		int user = 0;
 		Scanner scan = new Scanner(System.in);
-		System.out.print("°¡À§(1),¹ÙÀ§(2),º¸(3) Áß ÇÏ³ª¸¦ ÀÔ·ÂÇÏ½Ã¿À");
+		System.out.print("ê°€ìœ„(1),ë°”ìœ„(2),ë³´(3) ì¤‘ í•˜ë‚˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤");
 		user = scan.nextInt();
 		
 		
 		switch (user-com) {
 		case 0:
-			System.out.println("¹«½ÂºÎÀÔ´Ï´Ù");
+			System.out.println("ë¬´ìŠ¹ë¶€ì…ë‹ˆë‹¤");
 			break;
 
 		case -1: case 2:
-			System.out.println("ÄÄÇ»ÅÍ½ÂÀÔ´Ï´Ù.");
+			System.out.println("ì»´í“¨í„°ìŠ¹ì…ë‹ˆë‹¤.");
 			break;
 			
 		case 1: case -2:
-			System.out.println("»ç¿ëÀÚ ½ÂÀÔ´Ï´Ù");
+			System.out.println("ì‚¬ìš©ì ìŠ¹ì…ë‹ˆë‹¤");
 			break;
 			
 		default:
-			System.out.println("Àß¸øµÈ ÀÔ·ÂÀÔ´Ï´Ù");
+			System.out.println("ì˜ëª»ëœ ì…ë ¥ì…ë‹ˆë‹¤");
 			break;
 		}
 		

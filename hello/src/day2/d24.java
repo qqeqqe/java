@@ -5,11 +5,11 @@ public class d24 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		//¹®Á¦ a°¡ 2ÀÇ ¹è¼ö¸é 2ÀÇ ¹è¼ö¶ó°í Ãâ·ÂÇÏ´Â ¿¹Á¦
+		//ë¬¸ì œ aê°€ 2ì˜ ë°°ìˆ˜ë©´ 2ì˜ ë°°ìˆ˜ë¼ê³  ì¶œë ¥í•˜ëŠ” ì˜ˆì œ
 		
 		int num = 4;
 		if (num % 2 == 0){
-			System.out.println(num + "´Â 2ÀÇ ¹è¼öÀÔ´Ï´Ù");
+			System.out.println(num + "ëŠ” 2ì˜ ë°°ìˆ˜ì…ë‹ˆë‹¤");
 			}
 		
 		

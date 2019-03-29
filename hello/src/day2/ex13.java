@@ -5,7 +5,7 @@ public class ex13 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		// ╠╦╠╦╢э га╥н╠в╥╔ю╩ ╦╦╣Е╫ц©ю
+		// Й╣╛Й╣╛К▀╗ М■└К║°Й╥╦К·╗Л²└ К╖▄К⌠°Л▀°Л≤╓
 		
 		
 		

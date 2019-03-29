@@ -7,12 +7,12 @@ public class ex1if {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		/*¹®Á¦
-		ÄÜ¼Ö¿¡ ÀÔ·Â ¹ÞÀº Á¡¼ö°¡ ¾Æ·¡¿Í °°´Ù¸é ¾Æ·¡¿Í °°ÀÌ µî±ÞÀ¸·Î Ãâ·Â ÇÏ½Ã¿À
-		³» ½ÃÇèÁ¡¼ö°¡ 90Á¡ÀÌ»ó~100Á¡¹Ì¸¸ : A
-		³» ½ÃÇèÁ¡¼ö°¡ 80Á¡ÀÌ»ó~90Á¡¹Ì¸¸ : B
-		³» ½ÃÇèÁ¡¼ö°¡ 70Á¡ÀÌ»ó80Á¡´ë¸é : C
-		³» ½ÃÇèÁ¡¼ö°¡ 70Á¡ÀÌÇÏ¸é : D
+		/*ë¬¸ì œ
+		ì½˜ì†”ì— ìž…ë ¥ ë°›ì€ ì ìˆ˜ê°€ ì•„ëž˜ì™€ ê°™ë‹¤ë©´ ì•„ëž˜ì™€ ê°™ì´ ë“±ê¸‰ìœ¼ë¡œ ì¶œë ¥ í•˜ì‹œì˜¤
+		ë‚´ ì‹œí—˜ì ìˆ˜ê°€ 90ì ì´ìƒ~100ì ë¯¸ë§Œ : A
+		ë‚´ ì‹œí—˜ì ìˆ˜ê°€ 80ì ì´ìƒ~90ì ë¯¸ë§Œ : B
+		ë‚´ ì‹œí—˜ì ìˆ˜ê°€ 70ì ì´ìƒ80ì ëŒ€ë©´ : C
+		ë‚´ ì‹œí—˜ì ìˆ˜ê°€ 70ì ì´í•˜ë©´ : D
 		*/
 		
 		Scanner scan = new Scanner(System.in);

@@ -9,12 +9,12 @@ public class ifElse {
 		int c = 15;
 		
 		if ( b % 2 == 1){
-			System.out.println("È¦¼ö");
+			System.out.println("í™€ìˆ˜");
 		}
 		
 		
 		else {
-			System.out.println("Â¦¼ö");		
+			System.out.println("ì§ìˆ˜");		
 		
 	}
 	}

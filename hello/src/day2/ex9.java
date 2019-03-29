@@ -8,12 +8,12 @@ public class ex9 {
 		// TODO Auto-generated method stub
 
 		/*
-		 ÄÜ¼ÖÃ¢¿¡ 1~12±îÁöÀÇ ¼ıÀÚ¸¦ ÀÔ·ÂÇßÀ»¶§
-		 °¢ ´Ş·ÂÀÇ ¸¶Áö¸· ÀÏÀÌ ³ª¿À°Ô ÄÚµå¸¦ ¿Ï¼ºÇÏ½Ã¿À
+		 ì½˜ì†”ì°½ì— 1~12ê¹Œì§€ì˜ ìˆ«ìë¥¼ ì…ë ¥í–ˆì„ë•Œ
+		 ê° ë‹¬ë ¥ì˜ ë§ˆì§€ë§‰ ì¼ì´ ë‚˜ì˜¤ê²Œ ì½”ë“œë¥¼ ì™„ì„±í•˜ì‹œì˜¤
 		 
-		 1.3.5.7.8.10.12¿ùÀº 31ÀÏ
-		 2¿ùÀº 28ÀÏ
-		 4.9.11¿ùÀº 30ÀÏ
+		 1.3.5.7.8.10.12ì›”ì€ 31ì¼
+		 2ì›”ì€ 28ì¼
+		 4.9.11ì›”ì€ 30ì¼
 		 */
 		
 		
@@ -27,13 +27,13 @@ public class ex9 {
 		switch (a) {
 		case 1:case 3:case 5:case 7:case 8:case 10:
 		case 12:
-			System.out.println("31ÀÏ");	break;
-		case 2:	System.out.println("28ÀÏ");	break;
+			System.out.println("31ì¼");	break;
+		case 2:	System.out.println("28ì¼");	break;
 		case 4:case 9:	
-		case 11:	System.out.println("30ÀÏ");	break;
+		case 11:	System.out.println("30ì¼");	break;
 		
 		default:
-		  System.out.println("Àß¸øµÈ Á¤º¸ÀÔ´Ï´Ù.");
+		  System.out.println("ì˜ëª»ëœ ì •ë³´ì…ë‹ˆë‹¤.");
 		  
 		}
 		

@@ -5,16 +5,16 @@ public class ex2if {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		//³ªÀÌ°¡ 20ÀÌ»óÀÌ¸é ¼ºÀÎÀÌ¶ó°í Ãâ·ÂÇÏ°í ¾Æ´Ï¸é 20¹Ì³¶ ÀÌ¸é Ã»¼Ò³âÀÌ¶ó°í Ãâ·ÂÇÏ´Â ÄÚµå¸¦ ÀÛ¼ºÇÏ½Ã¿À
+		//ë‚˜ì´ê°€ 20ì´ìƒì´ë©´ ì„±ì¸ì´ë¼ê³  ì¶œë ¥í•˜ê³  ì•„ë‹ˆë©´ 20ë¯¸ë‚­ ì´ë©´ ì²­ì†Œë…„ì´ë¼ê³  ì¶œë ¥í•˜ëŠ” ì½”ë“œë¥¼ ì‘ì„±í•˜ì‹œì˜¤
 		
 		int a = 15;
 		
 		if (a >= 20){
-			System.out.println("¼ºÀÎ");
+			System.out.println("ì„±ì¸");
 		}
 		
 		else{
-			System.out.println("Ã»¼Ò³â");
+			System.out.println("ì²­ì†Œë…„");
 		}
 		
 	}
