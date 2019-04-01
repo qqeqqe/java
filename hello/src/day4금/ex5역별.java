@@ -29,12 +29,13 @@ i=5 공=4 *=1
 		int a = 0;
 		int i = 0;
 		
-		for (i=1; i<=5 ; i++ ){ 
+		for (i=1; i<=10; i++ ){ 
 			for(a=1; a<=i-1 ; a++ ){
 				System.out.print(" ");
 		}
 			
-			for(a=1; a<= 2*(5+1-1)-i; a++ ){
+			for(a=1; a<= 2*(6-i)-1; a++ ){
+			
 			System.out.print("*");
 			
 			}

@@ -2,7 +2,7 @@ package day2;
 
 import java.util.Scanner;
 
-public class ex10 {
+public class ex10랜덤값 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
