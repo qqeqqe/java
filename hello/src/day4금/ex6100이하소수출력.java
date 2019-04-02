@@ -6,7 +6,7 @@ public class ex6100이하소수출력 {
 		// TODO Auto-generated method stub
 //1부터 100까지 소수를 모두 출력하시오
 		
-		int num = 6;
+		int num ;
 		int i, cnt=0;
 		
 		for(num=1; num<=100; num++){

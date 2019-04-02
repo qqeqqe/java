@@ -20,7 +20,7 @@ public class ex07password {
 		char []pw = new char[8];
 		for(int i =0; i<pw.length; i++){
 			int r = (int)(Math.random()*62);
-			if(r<=9){ 
+			if(r<=9){
 				pw[i] = (char)('0'+r);
 		}else if(r<=35){
 			pw[i]=(char)('a'+(r-10));
