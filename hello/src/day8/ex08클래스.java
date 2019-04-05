@@ -6,11 +6,15 @@ public class ex08클래스 {
 
 		Tv t = null;
 		t = new Tv(); // tv() 라는 생성자를 호출해서 객체를 생성
-		t.volumnDown();
+		t.volumnDown(); 
 		t.printVolumn();
 		
 		t = new Tv();
 		t.printVolumn();
+		
+	
+		
+		
 		
 	}
 }
@@ -20,7 +24,7 @@ public class ex08클래스 {
 	private int channel;
 	private final int MAX_CHANNEL = 100;
 		
-	public void channelup(){ 	   // 하나 올리는 메서드
+	public void channelup(){ 	 // 하나 올리는 메서드
 			if (MAX_CHANNEL > channel) 
 				channel++;	
 			}

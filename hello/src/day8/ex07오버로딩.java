@@ -5,11 +5,12 @@ public class ex07오버로딩 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+		// 오버로딩 사용방법이다
 		printMultiTables();
 		}
 	
 	
-	
+
 	
 	
 	public static int printMul(int num1, int num2){

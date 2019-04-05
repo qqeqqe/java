@@ -2,7 +2,7 @@ package day8;
 
 import java.util.Scanner;
 
-public class ex04 {
+public class ex04메소드의리턴값 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
