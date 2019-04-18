@@ -1,6 +1,6 @@
-package day나의예제;
+package day나의연습장;
 
-public class ex01 {
+public class Exam1구구단 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -17,10 +17,10 @@ public class ex01 {
 	 
 	
 	//증감 연산자 실험
-	System.out.println();
-		int a = 1;
-	 a++;
-	 System.out.println(a);
+		System.out.println();
+			int a = 1;
+			a++;
+	 	System.out.println(a);
 	 
 
 		//비교연산자 실험
