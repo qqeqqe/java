@@ -57,7 +57,7 @@ public class UniversityStudent{
 	
 	
 	public UniversityStudent(){  //기본생성자
-		Gender.MALE;
+		gende = Gender.MALE;
 		grade = Grade.FRESHMAN;
 		major = Major.NONE;
 	}

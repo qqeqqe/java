@@ -1,6 +1,6 @@
 package day18;
 
-public class EnumExam3 {
+public class EnumExam {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
