@@ -1,4 +1,4 @@
-package day9;
+package day09;
 
 //다른 패키지에 있는 public 클래스를 사용하려면
 //inport 패키지.클래스명;
