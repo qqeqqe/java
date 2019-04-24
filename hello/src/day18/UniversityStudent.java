@@ -57,14 +57,14 @@ public class UniversityStudent{
 	
 	
 	public UniversityStudent(){  //기본생성자
-		gende = Gender.MALE;
+		gender = Gender.MALE;       
 		grade = Grade.FRESHMAN;
 		major = Major.NONE;
 	}
 
 	
 	
-	//복사 생성자 . 학생 이름을 일일이 정하기 힘드므로 
+	//복사 생성자 . 학생 이름을 일일이 정하기 힘드므로 메소드를 이용해 정보를 전달한다.
 	public UniversityStudent(Gender gender, Grade grede, Major major, String name, Integer id){
 		this.gender = gender;
 		this.grade = grede;
@@ -83,25 +83,4 @@ public class UniversityStudent{
 	
 	
 	
-}	
-
-
-	
-			
-	
-		
-
-		
-		
-			
-			
-		
-		/*
-		 학년에는 열거형으로 학년을 설정한다(1~5)
-		성별도 열거형으로 설정(남성, 여성)
-		학과도 열거형으로 설정
-
-		학번,평점,학교이름은 자유롭게
-		*/
-		
-		
+}		

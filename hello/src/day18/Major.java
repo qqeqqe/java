@@ -1,5 +1,7 @@
 package day18;
 
-public class Major {
 
+
+public enum  Major {   // 학과
+	NONE , COMPUTER, MECA, MACHINE, CHEMISTRY
 }

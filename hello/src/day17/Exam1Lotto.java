@@ -24,12 +24,12 @@ public class Exam1Lotto {
 	매개변수 : min, max, count
 	리턴타입 : List
 	*/
-	
+		
 	public static List<Integer> randomArr(int min, int max, int count){
 		// 중복되지 않는 정수를 만들어 주는 메소드
 				
 	          /*45-1+1 < */
-		if(max-min+1 < count) 
+		if(max-min+1 < count)
 		//생성할수 있는 숫자의 범위보다 만들어야 하는 갯수가 더 크면 중복될수 밖에 없기 때문에 무한루프에 빠지기는 경우가 생길것을
 		//막기 위한 코드
 		return null;
@@ -52,15 +52,15 @@ public class Exam1Lotto {
 		//List로 변환하여 List에 있는 get()에 접근하기 위해 변환시킴
 		
 		return list;
-}
-	
+}		
+		
 	//기능 : 로또 당첨번호와 번호들이 주어지면 보너스 번호를 제외하고 일치하는 갯수가 몇개인지 알려주는 메소드
 	//매개변수 : 당천번호들 = > list<Integer> lotto
 	// 번호들 => List<Integer> list
 	//리턴타입 => 갯수 = > int
 	//메소드명 => countList
-	
-	
+		
+		
 	public static int countList(List<Integer> lotto, List<Integer> list){ //인티저라고 해놓으면 정수와 null 값만 지정
 	//로또번호에 리스트 번호가 있는지 확인
 		
@@ -68,7 +68,7 @@ public class Exam1Lotto {
 			// 첫번째 매개변수가 당첨번호가 되어야 하는데 당첨번호가 아닌
 			// 번호가 오면 -1를 리턴후 종료
 			return -1;
-
+		
 		
 		
 		

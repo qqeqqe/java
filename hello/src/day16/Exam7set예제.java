@@ -2,7 +2,7 @@ package day16;
 
 import java.util.*;
 
-public class Exam7 {
+public class Exam7set예제 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub

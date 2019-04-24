@@ -6,7 +6,7 @@ public class EnumExam {
 		// TODO Auto-generated method stub
 
 	UniversityStudent std1 = new UniversityStudent
-			(Gender.MALE, Grade.ETC, Major.COMPUTER, "신윤호",2019160135);
+			(Gender.MALE, Grade.ETC, Major.COMPUTER , "신윤호",20120909);
 		
 		System.out.println(std1);
 		
