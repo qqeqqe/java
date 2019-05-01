@@ -4,9 +4,11 @@ public class main {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		test main1 = new test();
+		/*test main1 = new test();*/
 		
-		// MyFrame main = new MyFrame();
+		/*MyFrame main = new MyFrame();*/
+		
+		Aution main = new Aution();
 		
 		
 		

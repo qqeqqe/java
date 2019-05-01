@@ -1,7 +1,8 @@
 package project1;
 
 import java.awt.Color;
-import java.awt.Container;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -9,62 +10,66 @@ import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-public class MyFrame extends JFrame {
-
+public class MyFrame extends JFrame implements ActionListener {
+	JLabel sum;
+	JButton bu1, bu2, butten0, butten1, butten2, butten3, butten4, butten5, butten6, butten7, butten8, butten9,
+			butten11, butten12, butten13, butten14, butten15, butten16, AC, backMove;
 	
-	MyFrame() {
+	JFrame butten10;
+	
+
+	public MyFrame() {
 		super("피카츄 계산기"); // 부모클래스의 j프레임 상속 받기 or setTitle 메소드생성
 		setSize(1000, 600);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);	
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		// 창을 닫으면 없어지지만 메모리에 남아있다그래서 이 명령어를 넣어야 함
 
-		setVisible(true);
-
-		Container c = getContentPane(); // 버튼을 부착할 컨테인 팬을 만듬
-		/*JFrame c = new JFrame();*/
+		JPanel c = new JPanel(); // 버튼을 부착할 컨테인 팬을 만듬
+		/* JFrame c = new JFrame(); */
 
 		c.setLayout(null); // 위치를 어떻게 할것인가에 대한문
 
 		// ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
-		JLabel sum = new JLabel("결과값");
+		
+		sum = new JLabel("결과값");
 
-		JFrame butten10 = new JFrame();
+		butten10 = new JFrame();
 		ImageIcon leftimg = new ImageIcon(main.class.getResource("/project1/img/pp.png"));
 		butten10.setIconImages(getIconImages());
 
-		JButton butte1 = new JButton(".");
-		JButton butte2 = new JButton("=");
+		bu1 = new JButton(".");
+		bu2 = new JButton("=");
 
-		JButton butten0 = new JButton("0");
+		butten0 = new JButton("0");
 
-		JButton butten1 = new JButton("1"); // 이미지를 넣을 라벨 생성
-		JButton butten2 = new JButton("2");
-		JButton butten3 = new JButton("3");
-		JButton butten4 = new JButton("4");
-		JButton butten5 = new JButton("5");
-		JButton butten6 = new JButton("6");
-		JButton butten7 = new JButton("7");
-		JButton butten8 = new JButton("8");
-		JButton butten9 = new JButton("9");
+		butten1 = new JButton("1");
+		butten2 = new JButton("2");
+		butten3 = new JButton("3");
+		butten4 = new JButton("4");
+		butten5 = new JButton("5");
+		butten6 = new JButton("6");
+		butten7 = new JButton("7");
+		butten8 = new JButton("8");
+		butten9 = new JButton("9");
 
-		JButton butten11 = new JButton("N");
-		JButton butten12 = new JButton("F");
+		butten11 = new JButton("N");
+		butten12 = new JButton("F");
 
-		JButton butten13 = new JButton("/");
-		JButton butten14 = new JButton("*");
-		JButton butten15 = new JButton("-");
-		JButton butten16 = new JButton("+");
+		butten13 = new JButton("/");
+		butten14 = new JButton("*");
+		butten15 = new JButton("-");
+		butten16 = new JButton("+");
 
-		JButton AC = new JButton("AC");
-		JButton backMove = new JButton("<===");
+		AC = new JButton("AC");
+		backMove = new JButton("<===");
 
 		c.setBackground(Color.white); // 백그라운드 색을 어떻게 할것인가에 대한
 
 		// ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■
 		sum.setBounds(100, 100, 100, 50); // .
 
-		butte1.setBounds(630, 450, 100, 50); // .
-		butte2.setBounds(760, 450, 100, 50); // =
+		bu1.setBounds(630, 450, 100, 50); // .
+		bu2.setBounds(760, 450, 100, 50); // =
 
 		butten0.setBounds(500, 450, 100, 50);
 		butten1.setBounds(500, 370, 100, 50);
@@ -79,8 +84,9 @@ public class MyFrame extends JFrame {
 		butten8.setBounds(630, 210, 100, 50);
 		butten9.setBounds(760, 210, 100, 50);
 
-		butten10.setBounds(40, 120, 400, 460); // leftImg
-
+		
+		 butten10.setBounds(40, 120, 400, 460);
+		
 		butten11.setBounds(500, 40, 50, 50); // ON
 		butten12.setBounds(570, 40, 50, 50); // OFF
 
@@ -95,8 +101,8 @@ public class MyFrame extends JFrame {
 
 		c.add(sum);
 
-		c.add(butte1);
-		c.add(butte2);
+		c.add(bu1);
+		c.add(bu2);
 
 		c.add(butten0);
 		c.add(butten1);
@@ -121,6 +127,36 @@ public class MyFrame extends JFrame {
 
 		c.add(AC);
 		c.add(backMove);
-		c.add(butten10);
+		 /*c.add(butten10);*/
+
+		bu1.addActionListener(this);
+		butten0.addActionListener(this);
+		butten1.addActionListener(this);
+		butten2.addActionListener(this);
+		butten3.addActionListener(this);
+		butten4.addActionListener(this);
+		butten5.addActionListener(this);
+		butten6.addActionListener(this);
+		butten7.addActionListener(this);
+		butten8.addActionListener(this);
+		butten9.addActionListener(this);
+		/*butten10.addActionListener(this);*/
+		butten11.addActionListener(this);
+		butten12.addActionListener(this);
+		butten13.addActionListener(this);
+		butten14.addActionListener(this);
+		butten15.addActionListener(this);
+		butten16.addActionListener(this);
+		
+		
+
+		add(c);
+
+		setVisible(true);
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
 	}
 }
