@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+
+var arr = new Array();
+
+arr.push("2");
+arr.push("3");
+arr.push("1");
+arr[4] = 0;
+arr.push(1);
+
+
+console.log(arr);
+
+	var cnt1 = 0;
+	var idx = arr.length-1;
+	while(true){
+		idx = arr.lastIndexOf("2", idx)
+	
+		if(idx == -1)
+		break;
+		
+		if(idx == 0){
+		cnt1 ++;
+		break;
+		}
+
+		idx = idx - 1;
+		cnt1 ++;
+	}
+		console.log("arr에 있는 문자는 :"  + cnt1);
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	
+	<script>
+	var tmp;
+	console.log(typeof tmp);
+	console.log(typeof (tmp));
+
+	tmp = 10;
+	console.log('숫자 : ' + ( typeof tmp));
+	
+	tmp = '안녕';
+	console.log('문자열 : ' + ( typeof tmp));
+
+	tmp = true;
+	console.log('boolean : ' + ( typeof tmp)); // 값의 참 거짓을 따진다.
+
+	tmp = [1,2,3,4,'5']; //배열에 다양한 자료형의 값들을 넣을수 있다.
+
+	tmp = null; //비어있는 값을 표시할때 쓰인다
+
+	tmp = 1/0;
+	console.log('무한대 : ' + tmp);
+
+
+	console.log('A' > "b");  //false
+	console.log("A" > "a");  //false
+	console.log("AB"> "B");  //false
+	console.log("AB"> "A");  //true
+	console.log("123"> "3"); //false
+	console.log(123> "3"); //true
+
+	console.log("abc숫자? : " + !isNaN('abc'));  //숫자인지 아닌지 물어봄
+	//NaN : Not a Number
+
+	console.log("123은 유한수?  : " + isFinite(123)); // 유한수인지 아닌지 물어보기
+
+	function sum(num1, num2){
+		return num1+num2;
+	}
+
+	//두수의 최대 공약수를 구하는 함수를 만들고 테스트를 해보세요.
+	//함수에 자신이 없으면 우선 최대 공약수를 구하는 코드를 작성하세여
+
+
+	var tmp1 = 5;
+	var tmp2 = 10;
+  var gcd = 1;
+	
+
+	function gcd(tmp1, tmp2){
+		for (var i=1 ; i<=tmp1 ; i++){
+		if(tmp1%i==0 && tmp2%i==0){
+			gcd = i;
+		}
+	}
+		return gcd;
+	}
+	
+
+
+
+
+	</script>
+</body>
+</html>

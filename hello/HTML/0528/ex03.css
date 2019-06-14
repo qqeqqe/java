@@ -1,0 +1,12 @@
+.bigbox{
+width: 100%;
+height: 300px;
+border: 1px solid blueviolet;
+}
+
+.box{
+	margin: 20px;
+	height: 250px;
+	
+	border: 1px solid blue;
+}

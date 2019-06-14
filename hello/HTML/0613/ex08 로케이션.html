@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<button id="btnNaver" onclick="goNaver()">네이버</button>
+
+	<script>
+	function goNaver(){
+		var isGo = confirm('네이버로 갈꺼에여?');
+		if( isGo )
+		location.href = ' http://www.naver.com'
+	}
+
+
+	// 바로 이동이 아닌 중간 단계를 거쳐 이동할때 쓰인다..
+	// 주로 자료 업로드시 ...정말 자료를 등록 하시겠습니까? 라는 확인 문자나..
+	// 돈을 보낼때 정말 돈을 보내겠습니까? 라고 확인 작업을 할대 주로 쓰인다.
+	</script>
+</body>
+</html>

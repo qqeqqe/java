@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.big>div{
+	width: 30px;
+	height: 30px;
+	border: solid 1px black;
+	display: inline-block;
+}
+
+
+.bg-red{ background: red}
+.bg-blue{ background: blue}
+.bg-yellow{ background: yellow}
+.bg-green{ background: green}
+</style>
+
+</head>
+
+<body>
+	<div class="big">
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+		<div class="box"></div>
+	</div>
+
+	<form action=" ">
+			<div>
+				<input type="checkbox" value="red" onclick="setColor(this.value)">빨강
+			</div>
+			<div>
+				<input type="checkbox" value="blue" onclick="setColor(this.value)">파랑
+			</div>
+			<div>
+				<input type="checkbox" value="yellow" onclick="setColor(this.value)">노랑
+			</div>
+			<div>
+				<input type="checkbox" value="green" onclick="setColor(this.value)">그린
+			</div>
+		</form>
+	
+
+		
+	<script>
+		var colorArray = new Array();  //객체를 생성한다.
+		
+		function setColor(color){
+			var idx = colorArray.indexOf(color);  			//indexOf는 중요하다. 내가 정한 순번의 박스
+			
+			if(idx == -1){
+				colorArray.push(color);    // 여기서 push는 추가한다.
+			}else{
+				colorArray.splice(idx, 1); // 삭제한다. idx의 1개
+			}
+			
+			var boxArray = document.getElementsByClassName('box');  // 매개변수 클래스가 box인 것들 - 상자 4개 포함
+
+			//모든 박스 클래스에 색상 관련 클래스 제거
+			for(var i=0; i<boxArray.length; i++){
+				boxArray[i].classList = 'box';
+			}
+
+			 
+			for(var i = 0; i<colorArray.length; i++){
+				boxArray[i].classList.add('bg-'+ colorArray[i]);
+			}
+		}
+			
+
+	
+	</script>
+</body>
+</html>

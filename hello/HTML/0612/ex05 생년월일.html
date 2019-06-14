@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<h1>생년 월일 입력</h1>
+	<input type="text" placeholder="yyyy" onchange="checkYear()">
+	<input type="text" placeholder="mm" onchange="checkday()">
+	<input type="text" placeholder="dd" onchange="checkday2()">
+	
+	<script>
+	window.onload = function(){	}
+	
+	function checkYear (){
+		var objyear = document.getElementsByTagName('input')[0];
+		var year = objyear;
+		
+		var iyear = parseInt(year);   //지역변수 선언
+
+		// 자리수 검색
+		if( iyear.length !=4 ){
+			alert('4자리를 입력하세요');
+			
+			objyear.value = '';
+			return;
+		}
+
+		
+
+		if(isNaN(iyear) || iyear < 1000){   
+			alert('숫자만 입력하셈')
+			objyear.value = '';
+			return;
+			
+		}
+
+		// 출생범위 입력
+		if(parseInt(iyear)< 1800 || iyear > 2019){
+			alert('올바른 연도를 입력하세요');
+			objyear.value = '';
+			return;
+			}
+		}
+
+
+   /* ----------------------------------------------------월에 대한 계산  */
+
+		function checkday(){
+		var objyear2 = document.getElementsByTagName('input')[1];
+		var day2 = objyear2;
+		
+		var iday = parseInt(day2);   //지역변수 선언
+
+		// 자리수 검색
+		if( day2.length !=2 ){
+			alert('2자리를 입력하세요');
+			
+			objyear2.value = '';
+			return;
+		}
+
+		
+		// 출생월수
+		if(isNaN(iday) || iday < 10){   
+			alert('숫자만 입력하셈')
+			objyear2.value = '';
+			return;
+			
+		}
+
+		// 출생월 입력
+		if(parseInt(day2)< 13 || iday > 0){
+			alert('올바른 연도를 입력하세요');
+			objyear2.value = '';
+			return;
+			}
+		}
+   
+	 /* ---------------------------------------------------------일에 대한 계산  */
+
+		function checkday2(){
+		var objyear3 = document.getElementsByTagName('input')[2];
+		var day3 = objyear3;
+		
+		var iday3 = parseInt(day3);   //지역변수 선언
+
+		// 자리수 검색
+		if( day3.length !=2 ){
+			alert('2자리를 입력하세요');
+			
+			objyear3.value = '';
+			return;
+		}
+
+		
+		// 출생월수
+		if(isNaN(iday3) || iday3 < 10){   
+			alert('숫자만 입력하셈')
+			objyear3.value = '';
+			return;
+			
+		}
+
+		// 출생월 입력
+		if(parseInt(day3)< 13 || iday3 > 0){
+			alert('올바른 연도를 입력하세요');
+			objyear3.value = '';
+			return;
+			}
+		}
+
+
+
+
+	</script>
+</body>
+</html>

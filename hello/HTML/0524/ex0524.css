@@ -1,0 +1,36 @@
+
+body{
+    font-weight: 400; /* 문자굵기 */
+    font-size: 1.5em;  /* 글자굵기 */
+    text-decoration: underline;  /* 밑줄이나 옵션등 */
+    text-align: center; /* 정렬 */
+
+    color: #ff0000; 
+    /* 색상표현 */
+    /* color: red  알고있는 영어
+    /* color: rgb(255,0,0); RGB의 좌표 */ 
+    
+text-align: right;
+}
+
+body>div{
+    font-size: 0px;
+}
+
+div>div{
+    font-size: 20px;
+    display: inline-block;
+    /* 
+    border-style: solid;  
+    border-color: black;
+    border-width: 1px;
+     */
+    border: solid black 1px;  
+    /* 위 3개를 한개의 명령어로 표시 가능하며 순서는 상관없다 */
+
+    
+    border-radius: 5px; 
+    width: 300px;
+    height: 100;
+    /* float: left; */     /* _(언더바)를 제거한다 */
+}

@@ -1,0 +1,39 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: 0px;
+}
+
+input[type=text]:hover{
+	background: cornflowerblue;
+}
+
+input[type=text]:focus{
+	font-size: 95%;
+}
+
+input{
+	border: 1px solid black;
+	
+}
+
+input placeholder{
+	font-size: 10px;
+}
+
+
+
+h1{
+	margin: 0px auto;
+	width: 200px;
+	color: aqua;
+	border: 1px solid black;
+	text-align: center;
+	
+	
+}
+
+
+form{
+text-align: center;
+}

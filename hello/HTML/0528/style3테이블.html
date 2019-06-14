@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<style>
+
+
+th,td{
+	width: 100px;
+	height: 40px;
+	border: 1px solid black;
+}
+
+
+table{
+	border-collapse: collapse;        /*줄을 붙인다  바꾼다*/
+}
+
+
+
+
+
+
+
+.good tr{
+	border: none;     /*  줄의 모든값을 초기화한다 */
+	border-bottom: 1px red solid;
+}
+
+
+
+
+.good tbody tr:hover, .good tfoot tr:hover{
+	background-color: blue;
+	color: white;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+
+.good thead {
+background: brown;
+color: yellowgreen;
+}
+
+.good td, .good th{
+width: 100px;
+}
+
+.good tbody tr{
+	color: red;
+}
+
+.good td{
+	text-align: right;
+}
+
+.good tr td:nth-child(1){
+	text-align: center;
+}
+
+.good tr td:nth-child(2 - 5){
+	text-align: center;
+}
+</style>
+
+
+
+<body>
+	<table>
+
+		<thead>      
+							<tr><!-- tr은 한 행을 의미 --> 
+							<th>이름</th> 
+							<th>나이</th> 
+							<th>국적</th> 
+							<th>성별</th> 
+							<th>주소</th> 
+						</tr>
+		</thead>
+
+
+		<tfoot>
+			<tr>
+				<td >-</td>
+				<td>20</td>
+				<td>-</td>
+				<td>남</td>
+				<td>-</td>
+			</tr>
+					</tfoot>
+			
+		<tbody>
+
+				<tr>
+					<td rowspan="2">홍길동</td>  <!-- 행 2개 합치기 -->
+					<td>20</td>
+					<td>대한</td>
+					<td>남</td>
+					<td colspan="2">주소1</td>  <!-- colspan 2개의 행 합치기 -->
+					</tr>
+					
+					
+					<tr><!-- 실질적인값을 부여 --> 
+						<!-- <td>길동</td> -->
+						<td>22</td>
+						<td>미국</td>
+						<td>여</td>
+						<td>주소</td>
+						</tr>
+
+		</tbody>
+	</table><p></p>
+
+	
+
+
+	
+
+	<table class="good">
+<thead>
+		<tr>
+<th>test</th>
+<th>test1</th>
+<th>test2</th>
+<th>test3</th>
+<th>test4</th>
+</tr>
+</thead>
+
+
+<tfoot>
+		<td >-</td>
+		<td>20</td>
+		<td>-</td>
+		<td>남</td>
+		<td>-</td>
+			</tfoot>
+
+
+<tbody>
+<tr class="1">
+	<td>1</td>
+	<td>2</td>
+	<td>3</td>
+	<td>4</td>
+	<td>5</td>
+</tr>
+
+<tr class="2">
+		<td>6</td>
+		<td>7</td>
+		<td>8</td>
+		<td>9</td>
+		<td>10</td>
+	</tr>
+
+
+</tbody>
+</table>
+
+</body>
+
+</html>

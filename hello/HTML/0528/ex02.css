@@ -1,0 +1,16 @@
+.conta{
+	height: 500px;
+	margin: 50px 0 0 0;
+	border: 1px solid black;
+	position: relative;     /* 상대적인 위치 */
+}
+
+.abs{
+position: absolute;     /* 순수한 위치 */
+height: 100px;	
+width: 100px;
+border: 1px solid black;
+
+top: 10px;
+left: 10px;
+}

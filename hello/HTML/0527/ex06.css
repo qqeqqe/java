@@ -1,0 +1,39 @@
+#form>input:nth-child(1){
+    border: 5px solid rgb(240, 9, 228);
+padding: 10px 20px 30px 40px
+}
+
+form:focus{
+    color: blueviolet;
+    
+}
+
+a:visited{
+    color:yellowgreen;
+}
+
+a:hover{
+color: red;    
+}
+
+
+
+input:focus{
+    background-color: greenyellow;
+}
+
+.box{
+    width: 500px;
+    height: 500px;
+border-top: 1px solid black;
+margin: 5px 1px 1px 1px;
+padding: 10px;
+}
+
+
+*{
+box-sizing: border-box;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+}
+

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.big>div{
+	width: 30px;
+	height: 30px;
+	border: solid 1px black;
+	display: inline-block;
+}
+
+.red{ background: red}
+.blue{ background: blue}
+.yellow{ background: yellow}
+.green{ background: green}
+
+</style>
+
+</head>
+
+<body>
+	<div class="big">
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+	<div class="box"></div>
+</div>
+
+	<form action=" ">
+			<div>
+				<input type="checkbox" value="red" onclick="setColor(0, this.value)">빨강
+			</div>
+			<div>
+				<input type="checkbox" value="blue" onclick="setColor(1, this.value)">파랑
+			</div>
+			<div>
+				<input type="checkbox" value="yellow" onclick="setColor(2, this.value)">노랑
+			</div>
+			<div>
+				<input type="checkbox" value="green" onclick="setColor(3, this.value)">그린
+			</div>
+		</form>
+	
+
+	
+	<script>
+	function setColor(index, color){
+
+		/* var i = 'backgroud-color'  + color + ';'; */
+		/* 'color : ' + color + ';';    */
+
+		 
+
+		document.getElementsByClassName('box')[index].classList.toggle(color);
+
+		/* 
+		document.getElementsByClassName('box')[0].classList.toggle('blue')
+		document.getElementsByClassName('box')[1].classList.toggle('blue')
+		document.getElementsByClassName('box')[2].classList.toggle('yellow')
+		document.getElementsByClassName('box')[3].classList.toggle('green') 
+		*/
+	}
+	
+	</script>
+</body>
+</html>

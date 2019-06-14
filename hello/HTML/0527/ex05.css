@@ -1,0 +1,18 @@
+body>b{
+    font-weight: 100;
+    color:blue;
+}
+
+body b{
+    color: green;
+}
+b{
+    color: red;
+}
+
+body>div>a{
+text-decoration: none;
+font-weight: bold;
+color: red;
+
+}

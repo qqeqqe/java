@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.nav button{
+			border: none;
+			background: none;
+			float: left;
+			height: 30px;
+			width: 30px;
+			cursor: pointer;
+			display: block;
+		}
+		.ham-menu{
+			width: 200px;
+			height: 300px;
+			border: 1px solid black;
+			background: ghostwhite;
+			position: absolute;
+			left: -200px;
+		}
+		.move-menu{
+			animation-name: slow;
+			animation-duration: 1s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;  /* 애니메이션 끝난위치에서 대기하라 */
+		}
+
+		.move-menu1{
+			animation-name: slow1;
+			animation-duration: 1s;
+			animation-iteration-count: 1;
+			animation-fill-mode: forwards;
+		}
+
+		.x{
+			width: 15px;
+			height: 15px;
+			border-bottom:  1px solid ghostwhite;
+			border-left:  1px solid black;
+			text-align: center;
+			float: right;
+			font-size: 10px;
+			cursor: pointer;
+		}
+
+		@keyframes slow{
+			0%{left : -200px}
+			100%{left: 0;}
+		}
+
+		@keyframes slow1{
+			100%{left: -200px;}
+			0%{left : 0px}
+		}
+
+
+	</style>
+	<title>Document</title>
+</head>
+
+
+<body>
+	<div class="container">
+		<div class="nav">
+			<button onclick="hamMove()"><i class="fas fa-bars"></i></button>
+		</div>
+		<div class="ham-menu" id="hamMenu">
+				<button class="x" id="x" onclick="hamX()">X</button>	
+			<!-- <div class="x" id="x" onclick="hamX()">X</div> -->
+		</div>
+	</div>
+
+	
+
+	<script>
+	function hamMove(){
+		var obj = document.getElementById('hamMenu');
+		obj.classList.remove('move-menu1');
+		obj.classList.add('move-menu');
+	}
+
+	function hamX(){
+		var obj1 = document.getElementById('hamMenu');
+		obj1.classList.remove('move-menu');
+		obj1.classList.add('move-menu1');
+	}
+	</script>
+</body>
+</html>

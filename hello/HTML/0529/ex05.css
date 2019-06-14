@@ -1,0 +1,32 @@
+*{
+	margin: 0px;
+	
+	box-sizing: border-box;
+}
+
+/* 큰 박스 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+.bigbox{
+	
+	height: 100vh;
+	border: 3px black solid;
+	position: relative;
+	padding: 10px;
+}
+
+/* 작은 박스들 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+.lbox{
+	width: calc(50% - 5px);
+	height: 100%;
+	border: 3px solid blue;
+	float: left;
+	
+}
+
+.rbox{
+	width: calc(50% - 5px);
+	height: 100%;
+	border: 3px solid red;
+	float: left;
+	margin-left: 10px;
+	
+	}

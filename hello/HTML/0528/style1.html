@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="style.css">
+	<title>Document</title>
+<style>
+
+	.visibility-hidden{
+		visibility: hidden;       /* 해당공간을 공백으로 표시 */
+	}
+	.display-none{
+		display: none;           /* 해당공간을 공백까지 없에줌 */
+	}
+
+	.overflow{
+		border: 1px solid red;
+	height: 80px;
+	}
+
+	.overflow-hidden{            /* 글자가 짤린다 */
+		overflow: hidden;
+
+	}
+
+	.overflow-scroll{           /* 글자가 많을 경우 스크롤이 생긴다 */
+		overflow: scroll;
+	
+}
+
+.overflow-auto{              /* 글자가 많을경우 스크롤이 생긴다 */
+overflow: auto;
+}
+
+
+</style>
+</head>
+<div>
+		안녕하세여. 제 이름은 <span class="visibility-hidden">홍길동 </span>입니다.
+</div>
+<body>
+	<div>
+		안녕하세여. 제 이름은 <span class="display-none">가나다 </span>입니다.
+	</div>
+
+	<div class="overflow overflow-hidden">
+			인천대공원에 들개 출몰…시민들 공격받아 부상  포토 연합뉴스
+			'학교 폭력' 논란 효린 "피해자 측과 원만히 협의"  포토 파이낸셜뉴스
+			최저임금 고용감소 놓고 갑론을박…"0.79% 감소" vs "영향 미미"  포토 뉴시스
+			필로폰 제조 새 기술로…종로구 호텔서 30시간만에 완성품 만들어  포토 중앙일보
+			2PM 준호, 사회복무요원으로 대체 복무…'4급 판정' 이유는
+	</div>
+
+
+	<div class="overflow overflow-auto">
+			인천대공원에 들개 출몰…시민들 공격받아 부상  포토 연합뉴스
+			'학교 폭력' 논란 효린 "피해자 측과 원만히 협의"  포토 파이낸셜뉴스
+			최저임금 고용감소 놓고 갑론을박…"0.79% 감소" vs "영향 미미"  포토 뉴시스
+			필로폰 제조 새 기술로…종로구 호텔서 30시간만에 완성품 만들어  포토 중앙일보
+			2PM 준호, 사회복무요원으로 대체 복무…'4급 판정' 이유는
+	</div>
+
+
+
+	<div class="overflow overflow-scroll">
+			인천대공원에 들개 출몰…시민들 공격받아 부상  포토 연합뉴스
+			'학교 폭력' 논란 효린 "피해자 측과 원만히 협의"  포토 파이낸셜뉴스
+			최저임금 고용감소 놓고 갑론을박…"0.79% 감소" vs "영향 미미"  포토 뉴시스
+			필로폰 제조 새 기술로…종로구 호텔서 30시간만에 완성품 만들어  포토 중앙일보
+			2PM 준호, 사회복무요원으로 대체 복무…'4급 판정' 이유는
+	</div>
+
+	<div class="overflow overflow-visivility">
+			인천대공원에 들개 출몰…시민들 공격받아 부상  포토 연합뉴스
+			'학교 폭력' 논란 효린 "피해자 측과 원만히 협의"  포토 파이낸셜뉴스
+			최저임금 고용감소 놓고 갑론을박…"0.79% 감소" vs "영향 미미"  포토 뉴시스
+			필로폰 제조 새 기술로…종로구 호텔서 30시간만에 완성품 만들어  포토 중앙일보
+			2PM 준호, 사회복무요원으로 대체 복무…'4급 판정' 이유는
+	</div>
+</body>
+</html>

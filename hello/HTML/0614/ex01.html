@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<style>
+	.display-none{
+		display: none;
+	}
+
+	.display-block{
+	display: block;
+	}
+
+	
+	
+	</style>
+</head>
+<body>
+	
+	<button onclick="display('p')"> 클릭 </button>
+	<button onclick="displayClassList('p');"> 클릭11 </button>
+	<div class="display-none color-black " id="p">안녕하세여</div>
+
+
+	
+<script>
+
+
+
+function display(id){
+	//id가 id인 요소의 클래스 리스트를 display-block으로 덮어 씀
+	document.getElementById(id).classList = 'display-none';
+	document.getElementById(id).classList = 'display-block';
+}
+
+/* 
+document.getElementById(id).classList.remove = 'display-none';
+//지운다
+		
+document.getElementById(id).classList.add = ('display-none','display-block');
+//추가
+
+document.getElementById(id).classList.replace = 'display-none';
+
+document.getElementById(id).classList.toggle = ('display-none');     
+
+//있으면 제거하고 없으면 추가한다
+ */
+ 
+
+function displayClassList(id){
+	var classList = document.getElementById(id).classList;
+	for(var i = 0 ; i<classList.length; i++){
+			console.log(classList[i]);
+		}
+}
+</script>
+
+</body>
+</html>

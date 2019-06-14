@@ -1,0 +1,179 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.container{
+	min-width: 1100px;
+}
+.container-top{
+	height: 218px;
+	border-bottom: 1px solid gray;
+}
+.container-search{
+	height: 170px;
+}
+.container-banner{
+	height: 47px;
+	border-top: 1px solid #f1f3f6;
+}
+
+.container-bottom{
+	background-color: rgb(242,244,247);
+}
+
+.container-min{
+	width: 1080px;
+	height: 100%;
+	border: 1px solid black;
+}
+.div-center{
+	margin: 0 auto;
+}
+
+.container-bottom-out{
+	width: 1100px;
+	padding: 8px 10px 0;
+}
+
+.container-bottom-in{
+	width: 100%;
+}
+
+.container-bottom-in::after{         /* 백그라운드 색을 입혔을때 상자안에 색이 안될경우 */
+	clear: both;
+	display: block;
+	content: "";
+}
+
+
+.bottom-box{
+	margin-bottom: 8px;
+}
+
+.border-gray{
+	border: 1px solid #dee3eb;
+	border: 1px solid black;
+}
+
+.bottom-left div,.bottom-right div{
+	background-color: white;
+}
+
+/* top 부분 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+.container-search .container-min {
+	position: relative;
+}
+
+.logo-box{
+	position: absolute;
+	top: 50%;
+	left: -2px;
+	margin-top: -25px;
+}
+
+.logo{
+	display: block;
+	width: 198px;
+	height: 48px;
+	background-image: url(https://s.pstatic.net/static/www/img/2018/sp_search.png);
+	overflow: hidden;  /* 지정한 효과를 넘어서면 가려주는 효과 */
+  background-position: -4px -4px;
+}
+
+
+.a2{
+	position: absolute;
+	top: 35%;
+	left: 25%;
+	display: inline-block;
+	width: 470px;
+	height: 45px;
+	border: 2px solid #03cf5d;
+	background-color: #fff;
+}
+
+
+
+#search_btn{
+	left: 25%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	overflow: visible;
+	width: 49px;
+	height: 49px;
+	border: 0;
+	background: #03cf5d;
+}
+
+.ico_search_submit{
+position: absolute;
+overflow: hidden;
+clip: rect(0 0 0 0);
+margin: -1px;
+width: 1px;
+height: 1px;
+}
+
+/* 왼쪽 부분 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+.bottom-left{
+	float: left;
+	width: 740px;
+}
+
+.content-left1{
+	height: 120px;
+	border: 1px solid black;
+	background-image: url(/img/bg_timeboard_740x120.png);
+}
+
+.content-left2{
+	height: 46px;
+}
+
+
+.content-left3{
+	height: 246px;
+}
+
+
+.content-left4{
+	height: 884px;
+}
+
+.content-left5{
+	height: 130px;
+}
+
+/* 오른쪽 부분■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+
+.bottom-right{
+	float: right;
+	width: 332px;
+}
+
+.content-right1{
+	height: 120px;
+}
+
+.content-right2{
+	height: 142px;
+}
+
+
+.content-right3{
+	height: 150px;	
+}
+
+
+.content-right4{
+	height: 884px;	
+}
+
+.content-right5{
+	height: 130px;	
+}

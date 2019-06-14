@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script src='ex01비밀번호확인.js'></script>    <!-- //js 파일 연결 -->
+
+	<title>Document</title>
+</head>
+<body>
+	
+	비밀번호 <input type="text" id="pw3" placeholder="비밀번호 8~13자리 " onchange="checkPw(this.value, 8, 13)">
+	비밀번호 확인 <input type="text" id="pw4" placeholder="비밀번호 확인 " >
+	<button onclick="checkPwConfirm('pw3', 'pw4', 8, 13)"> 확인</button>
+	
+
+
+	<script>
+	window.onload = function(){	}
+	
+	
+	
+
+
+
+
+
+/* 
+	function chPw (){
+		var password = document.getElementsByTagName('input')[0];
+		var passwordR = document.getElementsByTagName('input')[1];
+		var ps = parseInt(password);
+		var ps1 = parseInt(passwordR);	
+		if( ps.length != 8 ){
+			alert('최소 8자리를 입력하세요');
+			return;
+		}
+	}
+
+function chPwR(){
+	
+	if( ps != ps1){
+			alert( '비밀번호가 같지 않습니다.')
+			return;
+		}
+	}
+ */
+	
+
+</script>
+
+</body>
+</html>

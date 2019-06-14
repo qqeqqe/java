@@ -1,0 +1,111 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+
+
+
+
+/* 큰 박스■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+.bigbox{
+	width: 152px;
+	height: 52px;
+	border: 1px black solid;
+}
+
+
+
+
+/* 작은 박스들■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+.lbox{
+	
+	width: 50px;
+	height: 50px;
+	border: 1px solid blue;
+	float: left;
+	
+}
+
+
+.rbox{
+	border: 1px solid red;
+	width: 50px;
+	height: 50px;
+	float: left;
+	
+	}
+
+
+	.cbox{
+	
+		border: 1px solid yellowgreen;
+		width: 50px;
+		height: 50px;
+		float: left;
+		
+		}
+
+
+ /* 오버 효과 ■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■■ */
+	.lbox:hover{
+		background-color: blueviolet; 
+		animation-name: color1;
+	}
+
+	.rbox:hover{
+		background-color: green; 
+		animation-name: color1;
+	}
+
+	.cbox:hover{
+		background-color: blue; 
+		animation-name: color1;
+	}
+
+
+
+
+		@keyframes color1{
+			from { background-color: chartreuse}
+			50% { background-color: crimson}
+			to { background-color: darkkhaki}
+		}
+
+
+
+
+		.box{
+			width: 152px;
+			height: 52px;
+			border: 1px black solid;
+		}
+
+		.box2{
+			width: 50px;
+			height: 50px;
+			border: 1px solid blue;
+			float: left;
+			animation-name: color;
+		}
+		
+		
+		.box3{
+			border: 1px solid red;
+			width: 50px;
+			height: 50px;
+			float: left;
+			animation-name: color;
+			}
+		
+		.box3{
+			
+				border: 1px solid yellowgreen;
+				width: 50px;
+				height: 50px;
+				float: left;
+				animation-name: color;
+				}	
+			
+		

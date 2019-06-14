@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<h1>취미</h1>
+	
+	<form action=" ">
+		<div>
+			<input type="checkbox" value="운동">운동
+		</div>
+		<div>
+			<input type="checkbox" value="노래">노래
+		</div>
+		<div>
+			<input type="checkbox" value="춤">춤
+		</div>
+		<div>
+			<input type="checkbox" value="독서">독서
+		</div>
+	</form>
+
+	<script>
+	function check(){
+		var arr = document.getElementsByTagName('input');
+		var hobbyArr = [];
+
+		for(var i=0 ; i<arr.length ; i ++){
+			if(arr[i].type == 'checkbox' ){
+				
+				if(arr[i].checked == true){ //checked 는 체크된 것을 표시
+					hobbyArr.push(arr[i].value);
+					// console.log(arr[i].value);
+				}
+			}
+		}
+		// console.log('체크박스 갯수' + cnt);
+		var hobbyStr = hobbyArr.join(' & ');
+		
+		return hobbyStr;
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+.hi{
+	font-size: 40px;
+	font-weight: bold;
+	animation-duration: 2s;                        /*  다른색으로 변하는 시간 2초로 지정*/
+	animation-iteration-count: infinite;            /* 반복횟수를 무제한으로 하겠다 */
+animation-name: fontColor;                        /*  애니메이션 이름 */
+height: 50px;
+display: block;
+}
+
+@keyframes fontColor{
+	 from {
+		color : black; 
+		font-size : 100%;
+		text-align: left;
+	 }
+	 
+
+	 25% { 
+		color : violet;
+	 font-size : 25%;
+	 text-align: center;
+	 }
+
+
+	 50% { 
+		 color : seagreen;
+		font-size : 50%;
+		text-align: left;
+		}
+
+
+		75% { 
+			color : yellowgreen;
+		 font-size : 75%;
+		 text-align: center;
+		 }
+		
+
+		to {
+			color : red; 
+		font-size : 100%;
+		text-align: left;
+		}
+}

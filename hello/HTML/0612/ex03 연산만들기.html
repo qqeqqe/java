@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+		<input type="text" id="text1" >+
+		<input type="text" id="text2" >=
+		<input type="text" id="text3"  readonly>  <!-- readonly 는 읽기 전용 -->
+	
+		<button onclick="message()">합계</button>
+
+		
+	
+	<script>
+	function message(){
+		var text1 = parseFloat(document.getElementById('text1').value);
+		var text2 = parseFloat(document.getElementById('text2').value);   // 여기서 파스인트를 넣으면 정수로...parseFloat은 실수로
+		
+		if(isNaN(text1))  text1 = 0;        // isNaN  문자인지 아닌지 감별한다. 숫자면 false 문자면 true
+		if(isNaN(text2))  text2 = 0;        // 문자가 들어가면 true이기 때문에 그 자리를 0값으로 돌린다.
+
+		document.getElementById('text1').value = text1;
+		document.getElementById('text2').value = text2;
+		
+		var text3 = document.getElementById('text3');       
+		/* .value 를 하는 순간 그 객체가 갖고 잇는 정보로 덮어 씌운다 */
+	
+		/* alert(text3);  // 알서는 알리다라는 의미 */
+		text3.value = text1+text2;
+		
+		
+	}
+	</script>
+</body>
+</html>

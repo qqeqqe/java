@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<p>
+	hihihi~~~
+	</p>
+
+	<button id="black" onclick="setColor('black')">기본</button>
+	<button id="red" onclick="setColor('red')">빨강</button>
+	<button id="blue" onclick="setColor('blue')">파랑</button>
+	<button id="green" onclick="setColor(this.id)">그린</button> 
+	
+
+	
+	<script>
+	function setColor(color){
+		
+		var str = 'color : ' + color + ';';
+	 
+		document.getElementsByTagName('p')[0].style = str;   // 여기서 [0]은 p 태크의 순번을 나타냄
+	}
+	</script>
+</body>
+</html>
+

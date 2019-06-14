@@ -1,0 +1,6 @@
+div{
+	width: 500px;
+	height: 500px;
+	border: 1px black solid;
+	margin: calc(50vh - 251px) calc(50% - 251px);
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" id="text" value="123">
+
+
+	<button onclick="message()">버튼</button>
+	
+	<script>
+	function message(){
+		var text = document.getElementById('text');
+		alert(text.value);
+		text.value='';
+	}
+
+	var btn = document.getElementsByTagName("button");  // 버튼에 대한 배열을 만들게 됨 .. 이용시 꼭 배열을 표기해야함
+
+	var btn = document.getElementsByTagName("button")[0];  // 0번째 배열에 대한 버튼을 가져옴
+	console.log(btn);
+
+	</script>
+	
+</body>
+</html>

@@ -1,0 +1,27 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.bigbox{
+	border: 1px solid black;
+	width: 502px;
+	height: 250px;
+	margin: 10% 25%;
+	
+}
+
+.rbox{
+	border: 1px solid red;
+	width: 250px;
+	height: 250px;
+	float: left;
+}
+
+.bbox{
+	border: 1px solid blue;
+	width: 250px;
+	height: 250px;
+	float: left;
+}
