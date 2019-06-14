@@ -5,15 +5,21 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JFrame;
 
-public class Aution extends MyFrame {
-
+public class Action extends Calculation {
+	String op = "";
+	int Num1, Num2, sum;
+	
+	
 	public void actionPerformed(ActionEvent e) {
 
 		Object ob = e.getSource();
 
+		
+		
+		
 		if (ob == bu1) {
 			System.out.print(".");
-		}else if (ob == butten0) {
+		} else if (ob == butten0) {
 			System.out.print("0");
 		} else if (ob == butten1) {
 			System.out.print("1");
@@ -46,7 +52,12 @@ public class Aution extends MyFrame {
 		} else if (ob == butten15) {
 			System.out.print("-");
 		} else if (ob == butten16) {
-			System.out.print("+");
+		System.out.println("+");
+		
 		}
 	}
+
+	
+	
 }
+

@@ -8,7 +8,7 @@ public class main {
 		
 		/*MyFrame main = new MyFrame();*/
 		
-		Aution main = new Aution();
+		Action main = new Action();
 		
 		
 		
