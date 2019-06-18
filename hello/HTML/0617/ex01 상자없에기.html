@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+<style>
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+.box{
+	width: 30px;
+	height: 30px;
+	border: solid 1px black;
+	display: inline-block;
+	
+	
+}
+
+.display-none
+{
+	display: none;
+}
+
+.bg-red{ background: red}
+.bg-blue{ background: blue}
+.bg-yellow{ background: yellow}
+.bg-green{ background: green}
+
+
+</style>
+
+</head>
+
+<body>
+	<div class="big">
+		<div class="box box1"></div>
+		<div class="box box2"></div>
+		<div class="box box3"></div>
+		<div class="box box4"></div>
+	</div>
+
+	<form action=" ">
+			<div>
+				<input type="checkbox" value="red" onchange="setColor(this.value)" >빨강
+			</div>
+			<div>
+				<input type="checkbox" value="blue" onchange="setColor(this.value)" >파랑
+			</div>
+			<div>
+				<input type="checkbox" value="yellow" onchange="setColor(this.value)" >노랑
+			</div>
+			<div>
+				<input type="checkbox" value="green" onchange="setColor(this.value)" >그린
+			</div>
+		</form>
+	
+
+		
+	<script>
+		var colorArray = new Array();  //객체를 생성한다.
+		
+		function setColor(color){
+			var idx = colorArray.indexOf(color);  			//indexOf는 중요하다. 순서를 안정했을때 내가 정한 순번의 박스
+			
+			if(idx == -1){
+				colorArray.push(color);    // 여기서 push는 추가한다.
+			}else{
+				colorArray.splice(idx, 1); // 삭제한다. idx의 1개
+			}
+			
+			var boxArray = document.getElementsByClassName('box');  // 매개변수 클래스가 box인 것들 - 상자 4개 포함
+
+			
+			//모든 박스 클래스에 색상 관련 클래스 제거
+			for(var i=0; i<boxArray.length; i++){
+				boxArray[i].classList = 'box';
+			}
+
+			var pos = -1; // 시작의 위치를 -1번지로 잡는다.
+
+			//배열에 저장된 색상을 순서대로 박사의 배경색으로 지정
+			for(var i = 0; i<colorArray.length; i++){
+				boxArray[i].classList.add('bg-'+ colorArray[i]);
+				pos = i;
+			}			
+			// i == 0이면 색칠한 박스가 하나도 없다는 의미
+			// pos == 0이면 색칠한 박스가 하나도 없다는 의미가 아님
+			
+
+
+			if (pos == -1) return;
+			for(var i= pos+1; i<boxArray.length ; i++){
+				boxArray[i].classList.add('display-none');
+			}
+		}
+		
+		
+		/* var click = document.getElementsByClassName('box')[i]
+
+				if( click == 'box1'){ 
+					
+				} */
+
+
+/* 	function hidden(){
+		var click = document.getElementsByClassName('box')[0]
+		if( click == 'box1')
+
+	} */
+		
+
+
+	
+	</script>
+</body>
+</html>

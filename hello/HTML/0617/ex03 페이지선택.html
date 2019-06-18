@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+	
+</head>
+
+<body>
+
+<div class="container">
+  
+  
+  <ul class="pagination">
+    <li class="page-item" ><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item active" onclick="clickpage(this);"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"  			 onclick="clickpage(this);"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"  			 onclick="clickpage(this);"><a class="page-link" href="#">3</a></li>
+    <li class="page-item" ><a class="page-link" href="#">Next</a></li>
+  </ul>
+</div>
+
+<!-- 
+여기서 (this)는 한가지 요소가 아닌 클래스를 넘긴다는 의미이다.
+예전에 this.value 같은 경우 value 값만 넘겨준다.
+-->
+
+
+<script>
+function clickpage(t){    // (t)라는 값을 만들어서 메소드 후반에  ※ t에 포함시킨다. classList의 active라는 문자열을 추가(add) 한다.
+	
+var Y = document.getElementsByClassName('page-item'); // page-item 라는 클래스명을 모두~ 다 가져온다.
+
+for (var i = 0 ; i<Y.length ; i++){
+	Y[i].classList.remove('active');   // 
+}
+	t.classList.add('active');
+}
+</script>
+</body>
+</html>

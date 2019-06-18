@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		
+	
+		.menu{
+			border: 1px solid black;
+			width: 100px;
+			height: 20px;
+			cursor: pointer;
+			position: absolute;
+		}
+
+
+		.menuBar{
+			width: 200px;
+			height: 200px;
+			border: 1px solid black;
+			position: relative;
+			}
+
+		.bg-menuBar{
+			display: none;
+		}
+			
+		
+		
+
+	</style>
+	<title>Document</title>
+</head>
+
+
+<body>
+
+<div class='container'>
+	<div class="auto-scroll" onmousemove="menuBar1()"></div>
+	<div class="search-list" onmouseout="hiddenBox()"></div>
+</div>
+
+
+
+	<script>
+	function hiddenBox(){
+		var obj = document.getElementsByClassName('searh-list')[0].
+		classList.remove('dispaly-block');
+	}
+
+	function show(){
+		var obj = document.getElementsByClassName('searh-list')[0].
+		classList.add('dispaly-block');
+	}
+
+	</script>
+</body>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+<style>
+ /* 모든 css에 적용될 코드 */
+*{
+	margin: 0%;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* 아래는 클래스 코드들 */
+.aBox{
+	border: 1px solid ghostwhite;
+	width: 200px;
+	height: 55px;
+}
+
+.miniBar{
+	height: 15px;
+}
+
+/* 1번째 2번째 3번째 글씨에 대한 코드 */
+.fontNum{
+	font-size: 3px;
+	text-align: right;
+}
+ 
+.cnt{
+	border: 1px solid black;
+	width: 100px;
+	height: 49px;
+	float: right;
+	text-align: center;
+}
+
+
+.A2{
+	display: inline-block;
+}
+
+
+.start,
+.reSet{
+	border: 1px solid black;
+	width: 90px;
+	height: 49px;
+	cursor: pointer;
+	float: right;
+}
+
+.start{
+	margin-right: 5px;
+}
+
+.saveBox{
+	border: 1px solid blueviolet;
+	height: 72%;
+	text-align: center;
+}
+
+
+</style>
+
+</head>
+<body>
+
+<div class="bigBox">
+	<div class="A1 aBox" >
+		<div class="cnt" id="cntValue">00:00:00:00</div>
+	</div>	
+
+	<div class="A2 aBox">
+		<button class="reSet" id="reset" onclick="reset()">Reset</button>
+		<button class="start" id="start" onclick="timeAttack()">Start / Save</button>
+	</div>
+
+	<div class="A3 aBox">
+		<div class="miniBar"><h1 class="fontNum">1 번 째</h1></div>
+		<div class="savePoint1 saveBox">00:00:00:00</div>
+	</div>
+
+	<div class="A4 aBox">
+		<div class="miniBar"><h1 class="fontNum">2 번 째</h1></div>
+		<div class="savePoint2 saveBox">00:00:00:00</div>
+	</div>
+
+	<div class="A5 aBox">
+		<div class="miniBar"><h1 class="fontNum">3 번 째</h1></div>
+		<div class="savePoint3 saveBox">00:00:00:00</div>
+	</div>
+</div>
+
+
+
+
+	<script>
+		var ready = false;   // 플래그 - 기준이 되는 값
+		var count = 0 ;
+		var id; //setInterval() 를 통해 할당된 값을 지정
+		var saveA3 = 0;
+		var cnt = 0;
+
+
+	// 실제 버튼을 누를때 동작해야할 코드
+		function timeAttack(){
+			if(!ready){
+			
+			id = setInterval(timer, 10);
+				ready = true;
+
+		
+			}else{				
+				
+				saveValue(cnt++)
+			}
+		}
+				// ready = true;
+				// clearInterval(id); 
+	
+
+	
+	// 리셋버튼을 누를때 리셋이 작동되게 할 코드
+	function reset(){
+		document.getElementById('cntValue').innerHTML = '00:00:00:00';
+			ready = false;	
+			count = 0;
+			reSetAll()
+		}
+
+
+	// 리셋 버튼을 누를때 삭제되야할 목록들
+	function reSetAll(){
+				saveValue(0)
+				saveValue(1)
+				saveValue(2)
+				cnt = 0;
+	}
+
+
+	// Stop 버튼을 누를때 값을 저장함
+	function saveValue(index){
+				var strCount = '00:00:00:00'
+				strCount = getTime(count)
+				document.getElementsByClassName('saveBox')[index].innerHTML = strCount;			
+		}
+
+	
+
+
+	// function reValue(y){
+	// 		var allBox = document.getElementsByClassName('saveBox').innerHTML
+
+	// 	 for(var i = 0 ; i<allBox.length ; i++){
+	// 	 	allBox[i].classList.remove(saveValue(index));
+	// 	 	}
+	// 	 	y.classList.add(saveValue(index));
+	// }
+
+
+
+
+
+
+	// 시간
+	function timer(){
+			if(ready){
+				var strCount = '00:00:00:00';
+				strCount = getTime(++count);
+				document.getElementById('cntValue').innerHTML = strCount;
+				return strCount;
+				}
+			}
+				//	setTimeout(timer, 1000)   
+				//	setInterval() 함수로 인해 위에게 필요가 없어짐
+				//	함수안에 함수를 불러 올수 있다. timer노랑색과 파랑색은 같은의미다 
+				//	다만 파랑색 timer에 () 붙이면 제귀 호출이 되어 오류가 난다
+
+
+
+	// 시간이 처리되게 해주는 코드
+		function getTime(count){
+			
+			var mm = count % 100;
+			count = parseInt(count/100);
+
+			var ss = count % 60;
+			count = parseInt(count/60);
+
+			var MM = count % 60;
+			count = parseInt(count/60);
+
+			var hh = count;
+
+			return ''+ getStr(hh)+ ':' + getStr(MM)+ ':' + getStr(ss)+ ':'+getStr(mm)
+		}
+
+
+	// 00:00:00 을 표시해주는 코드
+		function getStr(num){
+			if(num < 10)		
+			return '0' + num;
+			else return num;
+		}
+
+	</script>
+</body>
+</html>
