@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css">
+
+	<link rel="stylesheet" href="">
+	<script src="//code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="../"></script>
+	</head>
+
+<style>/* CSS  넣어주는곳 */
+
+</style>
+<body><!-- HTML  넣어주는곳 -->
+	
+	<table>
+		<tr>
+			<th>번호</th>
+			<th>제목</th>
+			<th>작성자</th>
+			<th>등록일</th>
+			<th>조회수</th>
+		</tr>
+	<c:forEach var="board" items="${list}">
+		<tr>
+			<th>${board.num}</th>
+			<th>${board.title}</th>
+			<th>${board.writer}</th>
+			<th>${board.registered}</th>
+			<th>${board.viws}</th>
+		</tr>
+	</c:forEach>
+	 </table>
+
+
+
+
+<script>/* 자바스크립트  넣어주는곳 */
+	$(document).ready(function(){
+
+		});
+	</script>
+	
+</body>
+</html>
