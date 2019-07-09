@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	
+	<link rel="stylesheet" href="">
+	<script src="//code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="../"></script>
+</head>
+<style>
+
+
+</style>
+<body>
+
+	<button id="hi1">인사</button> <button id="hi2">p태그 추가</button>
+	<P>0 : 안녕하세여.<br> </P>
+
+
+
+
+
+<script>
+	$(document).ready(function(){
+		var cnt = 0;
+		var obj = document.createElement('p');
+
+		$('#hi1').click(function(){
+			
+			
+			// $('p').append(++cnt, ' : 안녕하세여.<br>')
+				//뒤에부분에 추가시킬때
+				// 매개변수는 html코드나 객체가 와야한다. 
+				// append 앞에는 요소가 와야한다. 
+				
+				// var str = '<span>'+ ++cnt + ':안녕하세요.<span><br>';
+				// $(str).appendTo('p');
+
+
+				$('body').prepend(obj);
+				
+		});
+
+		$('#hi2').click(function(){
+			$('body').prepend(obj);
+			
+		});
+	});
+	</script>
+	
+</body>
+</html>

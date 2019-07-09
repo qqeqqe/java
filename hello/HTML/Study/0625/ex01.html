@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	
+	<link rel="stylesheet" href="">
+	<script src="//code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="../"></script>
+</head>
+<style>
+*{
+	border: 1px solid black;
+}
+
+.red{
+	border-color: red;
+}
+
+</style>
+<body>
+<div>
+<h1>안녕하세여1</h1>
+<h2>안녕하세여2</h2>
+</div>
+	
+<p>
+	<span>안녕하세여3</span>
+</p>
+
+
+
+<script>
+	$(document).ready(function(){
+		// $('span').parents().addClass('red');     --> span태그의 부모 조상을 빨간색 테두리로
+		// $('span').parents('p').addClass('red');   --> span태그의 부모 조상중 p 태그만 빨간색으로
+		// $('span').parents('body').addClass('red');		--> span 태그의 부모 조상중 body 태그만 빨간색으로
+		/* $('span').parents('p,body').addClass('red'); */   /* --> span태그의 부모 조상중 p , body 태그만 빨간색으로 */
+
+		/* $('span').parentsUntil('body').addClass('red'); */  /* --> span 태그의 조상중에서 body 태그 전까지만 빨간색 테두리 추가 */
+		// ※ 여기까지는 조상들의 검색에 대해 알아보았다
+
+
+		// ※ 여기부터는 자식들의 검색에 대해 알아본다.
+		//$('body').children().addClass('red');       --> body 태그의 자식들에게 빨간색 테두리 추가 
+		//$('body').children('div').addClass('red');  --> body 태그의 자식중 div만 빨간색 테두리 추가
+
+		// ※ 여기부터는 자손들의 검색에 대해 알아본다.
+		$('body').find('h1.abc').addClass('red');
+		});
+	</script>
+	
+</body>
+</html>

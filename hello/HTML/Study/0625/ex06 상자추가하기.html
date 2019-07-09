@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	
+	<link rel="stylesheet" href="">
+	<script src="//code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="../"></script>
+</head>
+<style>
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.bigBox{
+	position: absolute;
+	left: 30%;
+	top: 5%;
+}
+
+.box1{
+	width: 302px;
+	/* border: 1px solid red; */
+}
+
+.box2{
+	width: 302px;
+	height: 50px;
+	/* border: 1px solid blue; */
+}
+.imgBox{
+	width: calc(100% / 3);
+	height: 30px;
+	border: 1px solid black;
+	display: inline-block;
+	/* float: left; */
+}
+
+/* 
+content: 
+clear: both;
+display: block; 
+*/
+
+
+button{
+	margin: 20px 80px;
+	width: 150px;
+	height: 30px;
+}
+
+
+</style>
+<body>
+
+<div class="bigBox">
+	<div class="box1">
+		<div class="imgBox"></div>
+		<div class="imgBox"></div>
+		<div class="imgBox"></div>
+		<div class="imgBox"></div>
+		<div class="imgBox"></div>
+		<div class="imgBox"></div>
+		<div class="imgBox"></div>
+		<div class="imgBox"></div>
+		<div class="imgBox"></div>
+	</div>
+	<br>
+
+	<div class="box2">
+		<button>추가하기</button>
+	</div>
+</div>
+	
+
+
+
+
+<script>
+	$(document).ready(function(){
+			
+
+		// $('button').click(function(){
+		// 	var obj = document.createElement('div');
+		// 		$(obj).addClass('imgBox');
+		// 			$('.box1').append(obj);
+		// 	});
+
+		 $('button').click(function(){
+		 		var obj = '<div class="imgBox"></div>';
+		 			$('.box1').append(obj);
+
+			});
+		});
+	</script>
+	
+</body>
+</html>
