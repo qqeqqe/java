@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css">
+
+	<link rel="stylesheet" href="">
+	<script src="//code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="../"></script>
+	</head>
+
+<style>/* CSS  넣어주는곳 */
+
+</style>
+<body><!-- HTML  넣어주는곳 -->
+	
+	<div><input type="password" id="pw1" placeholder="비번 입력"></div>
+	<div><input type="password" id="pw2" placeholder="비번 입력"></div>
+	<div id="pwMsg"></div>
+
+
+<script>/* 자바스크립트  넣어주는곳 */
+$(document).ready(function(){
+		// $('input').keypress(function(){
+		// 	});
+		// $('input').keydown(function(){
+		// 	});
+		// $('input').keyup(function(){
+		// 	});
+
+		$('#pw2').keyup(function(){
+			var pw1 = $('#pw1').val();
+			var pw2 = $('#pw2').val();
+			var str = '';
+			if(pw1 == pw2){
+				str = '비밀번호가 일치합니다';
+			}else{
+				str = '비밀번호가 일치하지 않습니다.';
+			}
+			$('#pwMsg').html(str);
+	});
+});
+
+</script>
+</body>
+</html>

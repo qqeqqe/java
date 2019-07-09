@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	
+	<link rel="stylesheet" href="">
+	<script src="//code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="../"></script>
+</head>
+
+<style>/* CSS  넣어주는곳 */
+
+
+</style>
+<body>
+
+<div class="calendar">
+	<div>
+		<select name="" id="month">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+			<option value="10">10</option>
+			<option value="11">11</option>
+			<option value="12">12</option>
+		</select>
+		<select name="" id="day"></select>
+	</div>
+</div>
+
+
+
+<script>/* 자바스크립트  넣어주는곳 */
+	$(document).ready(function(){
+		var day = [31,28,31,30,31,30,31,31,30,31,30,31]  
+		//1.각 월에 대한 전역변수를 만들어준다. 예를 들어 1월을 선택시 0번째 배열을 선택하기 위함
+
+		addDay(1);
+		//처음 보여주는 월수 == 여기선 1월로 했다.
+
+		$('#month').change(function(){
+		//2.각 월을 선택시 .change (체인지) 효과를 준다.
+
+		var month = $(this).val()     
+		//현재 선택한 value() 값
+
+		addDay(month);
+		// 지정해둔 함수값을 불러온다.
+		});
+		
+			
+		function addDay(month){
+			var str='';
+			 // 값을 빈공간으로 만든다. 이유는 밑에서 += (더한후 대입) 하기때문에
+
+				for(var i = 1; i<=day[month-1]; i++){
+					str += '<option value="'+i+'">'+i+'</option>'
+					// 여기서 i 값은 day에 해당한다. 반복처리후 아래 $('#day').html(str) 값을 입력하기때문이다.
+					// i의 초기값을 1을 준 이유는 1일부터 시작이기때문에
+					// i<=day[month-1] 인 이유는 배열이 0부터이기 때문에 i가 1을 선택하면 day
+
+					}
+
+						$('#day').html(str);
+					}
+				});
+			
+	</script>
+	
+</body>
+</html>

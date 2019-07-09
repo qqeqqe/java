@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.css"> -->
+
+	<link rel="stylesheet" href="">
+	<script src="//code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="../"></script>
+
+	
+</head>
+
+<style>/* CSS  넣어주는곳 */
+.box{
+	border: 1px solid black;
+	width: 100px;
+	height: 50px;
+	display: inline-block;
+	text-align: center;
+	cursor: pointer;
+	background-color: white;
+	line-height: 50px;
+	font-weight: bold;
+	
+}
+
+.bigBox{
+	position: absolute;
+}
+
+
+.clickColor{
+	background-color: aqua;
+	
+}
+
+
+#push{
+	z-index: 2;
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	
+}
+
+
+</style>
+<body>
+			<div class="bigBox">
+				<div class="box boxA">메뉴1
+						
+					</div>
+				<div class="box boxB">메뉴2
+						
+				</div>
+				<div class="box boxD">메뉴3
+						
+				</div>
+				<div class="box boxD">메뉴4
+						
+				</div>
+			</div>
+
+		<div>		
+					<div id="push"></div>
+					<div id="push"></div>
+					<div id="push"></div>
+					<div id="push"></div>
+		</div> 
+			
+			
+			
+
+
+
+
+<script>/* 자바스크립트  넣어주는곳 */
+	$(document).ready(function(){
+		// var boxS = '<div class="box">list</div>' + '<br>' + '<div class="box">list</div>' + '<br>' + '<div class="box">list</div>' + '<br>' 
+		// var boxD ='';
+		
+
+		$('.box').mouseenter(function(){
+			$(this).addClass('clickColor');
+			
+			
+				// $('#push').html(boxS);		 
+				//  $(this).html(boxS);		 
+			});
+
+		$('.box').mouseout(function(){
+				$(this).removeClass('clickColor');
+				
+				// $('#push').html(boxD);
+			  //  $(this).html(boxD);		
+			});		
+	});
+	</script>
+	
+</body>
+</html>
+
+
+
+		<!-- $('#pw2').keyup(function(){
+			var pw1 = $('#pw1').val();
+			var pw2 = $('#pw2').val();
+			var str = '';
+			if(pw1 == pw2){
+				str = '비밀번호가 일치합니다';
+			}else{
+				str = '비밀번호가 일치하지 않습니다.';
+			}
+			$('#pwMsg').html(str);
+	}); -->
