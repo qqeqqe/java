@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	
+	<link rel="stylesheet" href="../0621/ex04.css">
+	<script src="//code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="../0621/ex04.js"></script>
+</head>
+<body>
+	<div class="container-box">
+		<div class="box">1</div>
+		<div class="box">2</div>
+		<div class="box">3</div>
+	</div>
+		<ul>
+			<li><input type="checkbox" class="box-check" value="0"></li>
+			<li><input type="checkbox" class="box-check" value="1"></li>
+			<li><input type="checkbox" class="box-check" value="2"></li>
+		</ul>
+
+
+
+
+
+
+		<script>
+				$(document).ready(function(){
+					$('.box-check').change(function(){
+						var isChecked = $(this).prop('checked');  // 여기서 this는 자신을 나타내는 change의 함수를 나타내는것이다.
+						var pos = 0;  // 현재 이벤트가 발생된 체크박스의 위치
+						var cnt = 0;	
+						var thisObj = $(this);
+
+						$('.box-check').each(function(){ 
+							if($(this).val() == thisObj.val()){     // 여기서 this는 자신을 나타내는 each의 함수를 나타내는것이다.
+								pos = cnt;
+							}
+							cnt++;
+						})
+
+						if(isChecked){
+							$('.box').eq(pos).addClass('display-none');
+						}
+						else{
+							$('.box').eq(pos).removeClass('display-none');
+						}
+					});
+				});
+				</script>
+	
+</body>
+</html>
