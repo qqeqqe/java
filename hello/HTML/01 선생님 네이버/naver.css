@@ -407,6 +407,7 @@ a.naver-green{
 
 .r2-prev{
 	background-position: -433px -303px;
+	border: none;
 }
 .r2-prev:hover{
 	background-position: -449px -303px;

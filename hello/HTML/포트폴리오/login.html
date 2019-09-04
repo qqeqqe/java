@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<title>Document</title>
+	
+
+	<style>
+			.box0{
+			position: absolute;
+			background-image: url(/img/login.png);
+			width: 100%; height: 770px;
+			}
+
+		/* 1 시작*/
+			.box1{
+				position: absolute;
+				width: 189px; height: 56px;
+				background-image: url(/img/logo.png);
+				left: 3%; top: 3%;
+			}
+		/* 1 끝*/
+		/* 2 시작*/
+		.box2{
+			position: absolute;
+			width: 450px; height: 660px;
+			transform: translate(-50%);
+			left: 50%; top: 10%;
+			background-color: rgba(0,0,0,.75);
+			padding: 60px 68px 40px;
+			border-radius: 30px;
+		}
+
+		form>.box2-4{
+			margin-top: 50px;
+			background: red;
+			text-align: center;
+			font-size: 30px;
+			cursor: pointer;
+			padding-right: 25px;
+		}
+
+		.box2-5{
+			margin-top: 190px;
+			color: darkgray;
+		}
+		/* 2 끝*/
+		/* 공용 시작*/
+		*		{ margin: 0;	padding : 0; }
+
+		.public-line{
+			/* border: solid 1px blue; */
+		}
+
+		.public-font{
+			color: white;
+			font-weight: 700;
+		}
+
+		.public-box{
+			margin-top: 20px;
+			position: relative;
+			width: 317px; height: 50px;
+			background: #333;
+			border-radius: 20px;
+			color: #fff;
+			padding-left: 30px;
+			border: 0;
+		}
+		/* 공용 끝*/
+			
+		</style>
+		</head>
+		<body>
+		<div class="box0"></div>
+		<a href="http://localhost:8080/my/"><div class="box1 public-line"></div></a>
+
+		<div class="box2 public-line">
+			<div class="box2-1 "><h1 class="public-font ">로그인</h1></div>
+			<form method="post" action="" >
+			<input type="text" name="id" id="" placeholder="아이디를 입력하시오" class="box2-2 public-box">
+				<input type="text" name="id" id="" placeholder="패스워드를 입력하시오" class="box2-3 public-box">
+			<button class="box2-4 public-box">Login</button>>
+			<div class="box2-5 ">HORROR-Q 회원이 아니신가요? <br>
+				<a href="https://www.netflix.com/kr/login " style="color: white; font-weight: 900">지금 가입하세요</a><br>
+				더 많은 혜택을 받으실수 있습니다.
+			</div>
+		</form>
+		</div>
+		</body>
+		</html>
