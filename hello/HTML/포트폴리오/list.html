@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="/포트폴리오/list.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<title>Document</title>
+</head>
+<style>
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.box0{
+	width: 100%;		height: 100%;
+	position: absolute;
+	background-image:url(/img/bg.png);
+	z-index: -3;
+}
+
+.box1-bg1{
+	width: 100%;
+	height: 128px;
+	border-bottom: 4px solid silver;
+	background-color: black;
+	opacity: 0.7;
+	z-index: -1;
+	position: absolute;
+}
+
+.box1-bg2{
+	width: 100%;
+	height: 100%;
+	border-bottom: 4px solid silver;
+	background-color: black;
+	opacity: 0.5;
+	z-index: -2;
+	position: fixed;
+}
+
+.box1-1{
+position: absolute;
+left: 1%; top:2%; 
+cursor: pointer;
+}
+
+.box1-2{
+width: 300px; height: 80px;
+color: whitesmoke;
+transform: translate(200%,-15px);
+font-size: 80px;
+}
+
+.box1-2a{
+width: 300px; height: 80px;
+color: whitesmoke;
+transform: translate(204%,-128px);
+font-size: 80px;
+color: red;
+}
+
+.box1-3{
+position: absolute;
+left: 52%;
+transform: translate(200%,-153px);
+width: 220px; height: 60px;
+}
+
+.box2{
+	width: 100%;
+	height: 55px;
+	margin-top: 20px
+}
+
+.box2-0{
+	margin-right: 0px;
+}
+
+.box2-1{
+	width: 100px;
+	margin-left: 10px;
+}
+
+.box2-3{
+	width: 200px;
+}
+
+.box2-4{
+	transform: translate(-23px, 0px);
+	color: red;
+	border-color: red;
+}
+
+.box2-4:hover, .btn-outline-info:not(:disabled):not(.disabled):active{
+	background-color: red;
+	border-color: red;
+	color: whitesmoke;
+}
+
+.box2-5{
+	position: absolute;		width: 10%;		left: 88%;    transform: translate(5px, -47px);;
+}
+
+.box3-2{
+	color: white;
+	text-align:center;
+}
+
+.box3-3:focus{
+outline-color: red;
+text-align: center;
+}
+
+.box3-5{
+	margin-left: 20px;
+}
+
+.public-line{
+	/* border: 1px solid magenta; */
+}
+
+</style>
+<body >
+<div class="box0" ></div>
+	<div class="box1 public-line public-font">
+		<div class="box1-bg1"></div>
+		<div class="box1-bg2"></div>
+			<div class="box1-1"><img src="/img/topLogo.png" alt="" width="150px" height="50px"></div>
+			<div class="box1-2">Q n A</div>
+			<div class="box1-2a">..</div>
+		
+			
+			<div class="box1-3" >
+				<button type="button" class="btn btn-danger "><i class="far fa-edit"></i></button>
+				<button type="button" class="btn btn-danger "><i class="fas fa-home"></i></button>
+				<button type="button" class="btn btn-danger "><i class="fas fa-globe"></i></button>
+				<button type="button" class="btn btn-danger" onclick="myInFo()"><i class="fas fa-key"></i></button>
+			</div><!-- box1-3 끝부분 -->
+	</div><!-- box1 끝부분 -->
+
+	<div class="box2 public-line public-font">
+			<form action="" method="get" class="row mb-2 mt-2 box2-0">
+				<div class="form-group col-1 mb-0">
+					<select class="form-control box2-1" name="type">
+						<option value="0" >선택</option>
+						<!-- <c:if test="${pageMaker.criteria.type == 0 }">selected</c:if> -->
+						<option value="1" >제목</option>
+						<option value="2" >작성자</option>
+						<option value="3" >내용</option>
+					</select>
+				</div>
+				<div class="form-group col-2 mb-0 box2-2">
+					<input type="text" class="form-control box2-3" name="search" value="">
+				</div>
+				<button type="submit" class="btn btn-outline-info box2-4" >검색</button>
+			</form>
+
+			<div class="box2-5">
+				<select class="form-control box2-6" id="perPageNum">
+					<option <c:if test="${pageMaker.criteria.perPageNum == 0}" >selected</c:if> value="0">0page</option>
+					<option <c:if test="${pageMaker.criteria.perPageNum == 5}" >selected</c:if> value="5">5page</option>
+					<option <c:if test="${pageMaker.criteria.perPageNum == 10}">selected</c:if> value="10">10page</option>
+					<option <c:if test="${pageMaker.criteria.perPageNum == 20}">selected</c:if> value="20">20page</option>
+				</select>
+			</div>
+	</div><!-- box2의 끝 -->
+
+	<div class="box3 public-line public-font">
+		<div class="box3-1">
+			<table class="table box3-2">
+				<tr class="box3-3">
+					<th width="10%">번호</th>
+					<th width="40%">제목</th>
+					<th width="20%">작성자</th>
+					<th width="20%">등록일</th>
+					<th width="10%">조회수</th>
+				</tr>
+				<c:forEach var="board" items="${list}">
+					<tr>
+						<th>${board.num}</th>
+						<th><a href="<%=request.getContextPath()%>/board/display?num=${board.num}">${board.title}</a></th>
+						<th>${board.writer}</th>
+						<th>${board.registered}</th>
+						<th>${board.views}</th>
+					</tr>
+				</c:forEach>
+			</table>
+		</div><!-- box3-1 의 끝 -->
+		
+		<div class="box3-4">
+				<!-- 일반적인페이지네이션 -->	
+				<ul class="pagination" style="justify-content: center;">
+					<c:if test="${pageMaker.prev}">
+						<li class="page-item">
+							<a class="page-link" href="<%=request.getContextPath()%>/board/list?page=${pageMaker.startPage-1}&perPageNum=${pageMaker.criteria.perPageNum}"><i class="fas fa-angle-left"></i></a> 
+						</li>
+					</c:if>
+						
+					<c:forEach begin="${pageMaker.startPage }" end="${pageMaker.endPage}" var="index">
+						<!-- 이부분은 페이지 네비에 현재 이용중인 페이지에 색을 입히는 코드 -->
+						<c:if test="${pageMaker.criteria.page == index }">
+							<li class="page-item active" >
+								<a class="page-link" href="<%=request.getContextPath()%>/board/list?page=${index}&perPageNum=${pageMaker.criteria.perPageNum}">${index}</a> 
+							</li>
+						</c:if>
+								
+						<c:if test="${pageMaker.criteria.page != index }">
+							<li class="page-item" >
+								<a class="page-link" href="<%=request.getContextPath()%>/board/list?page=${index}&perPageNum=${pageMaker.criteria.perPageNum}">${index}</a> 
+							</li>
+						</c:if>
+					</c:forEach>
+					<!-- end -->
+						
+					<c:if test="${pageMaker.next}">
+						<li class="page-item">
+							<a class="page-link" href="<%=request.getContextPath()%>/board/list?page=${pageMaker.endPage+1}&perPageNum=${pageMaker.criteria.perPageNum}"><i class="fas fa-angle-right"></i></a> 
+						</li>
+					</c:if>
+				</ul>
+		</div><!-- box3-4 의 끝 -->
+			<div class="box3-5">
+				<a href="<%=request.getContextPath()%>/board/register">
+						<button type="button" class="btn btn-danger"><i class="far fa-edit"></i> 등록</button>
+				</a>
+		</div>
+	</div><!-- box3 의 끝 -->
+
+
+
+<script>
+	
+	</script>
+</body>
+</html>
